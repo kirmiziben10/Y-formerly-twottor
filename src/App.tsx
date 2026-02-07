@@ -16,10 +16,7 @@ function App() {
         theme
       }
     >
-      <Sidebar className/>
-      <div className=" flex justify-center place-items-center flex-1">
-          TESTING
-      </div>
+      <Sidebar />
 
       {/*dark-mode toggle*/}
       <div className="bg-zinc-300 dark:bg-zinc-700 bottom-2 right-2 absolute flex place-items-center rounded p-1">
