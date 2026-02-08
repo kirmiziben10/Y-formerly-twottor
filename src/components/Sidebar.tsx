@@ -1,15 +1,15 @@
 import "../index.css";
-import { House, Search, Bell, User, Pen, icons } from "lucide-react";
+import { House, Search, Bell, User, Pen } from "lucide-react";
 
 export default function Sidebar() {
   const menuItemsClass =
-    "p-3 m-0.5 ml-0 pr-6 h-13.5 text-xl rounded-full inline-flex flex-row justify-start items-center hover:bg-zinc-300 dark:hover:bg-zinc-700";
+    "p-3.5 m-0.5 ml-1.5 pr-6 h-11.5 text-xl rounded-full inline-flex flex-row justify-start items-center hover:bg-zinc-300 dark:hover:bg-zinc-700";
   const iconSize = "28px"
     return (
     <header className="flex">
       <div className="flex flex-col items-start right w-68.75">
         
-        <div className="flex items-center justify-center text-4xl font-bold font-sans size-14">
+        <div className="flex ml-1.5 items-center justify-center text-4xl font-bold font-sans size-14">
           <a href="/" >λ</a>
         </div>
 
@@ -47,7 +47,7 @@ export default function Sidebar() {
         <section className="absolute bottom-10">
           <a href="/profile" className=" hover:bg-zinc-300 dark:hover:bg-zinc-700 p-2 pl-4 pr-8 rounded-full flex flex-row place-items-center justify-center items-center ml-6">
             <img
-              className="background-white w-12 rounded-full"
+              className="bg-white dark:bg-black size-12 object-contain rounded-full"
               src="https://cdn.freebiesupply.com/logos/thumbs/2x/linux-tux-1-logo.png"
               alt="Profile picture"
             />
