@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./index.css";
 import Sidebar from "./components/Sidebar";
-import Feed from "./components/Feed"
-import Trending from "./components/Trending"
+import Main from "./components/Feed";
 import { Sun, Moon } from "lucide-react";
 
 function App() {
@@ -14,13 +13,15 @@ function App() {
   return (
     <div
       className={
-        "bg-zinc-50 dark:bg-zinc-950 text-black  dark:text-white  flex w-full h-screen w-f " +
+        "bg-zinc-50 dark:bg-zinc-950 text-black dark:text-white flex justify-center h-screen w-f transition-colors duration-300 " +
         theme
       }
     >
-      <Sidebar />
-      <Feed/>
-      <Trending/>
+      <div className=" w-316.25 flex flex-row">
+        <Sidebar />
+        <Main />
+      </div>
+
       {/*dark-mode toggle*/}
       <div className="bg-zinc-300 dark:bg-zinc-700 bottom-2 right-2 absolute flex place-items-center rounded p-1">
         <button className="p-1 rounded hover:bg-zinc-400" onClick={manageTheme}>

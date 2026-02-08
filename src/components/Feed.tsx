@@ -1,9 +1,10 @@
-import "../index.css"
+import "../index.css";
+import Widgets from "./Widgets";
 export default function Feed() {
-    return(
-        <main className="border-zinc-300 border-x-1 flex-1">
-            Testing
-        </main>
-    )
-
+  return (
+    <main className="flex flex-row space-betwee content-between w-262.5">
+      <div className="flex w-150 border-zinc-700 border-x">Testing</div>
+      <Widgets/>
+    </main>
+  );
 }
