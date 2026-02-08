@@ -13,7 +13,7 @@ function App() {
   return (
     <div
       className={
-        "bg-zinc-50 dark:bg-zinc-950 text-black dark:text-white flex justify-center h-screen w-f transition-colors duration-300 " +
+        "bg-zinc-50 dark:bg-black text-black dark:text-white flex justify-center h-screen w-f transition-colors duration-300 " +
         theme
       }
     >
