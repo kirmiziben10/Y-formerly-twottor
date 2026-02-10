@@ -1,8 +1,9 @@
 import { useState } from "react";
+
+import { Sun, Moon } from "lucide-react";
 import "./index.css";
 import Sidebar from "./components/Sidebar";
 import Main from "./components/Feed";
-import { Sun, Moon } from "lucide-react";
 
 function App() {
   const [theme, setTheme] = useState("");

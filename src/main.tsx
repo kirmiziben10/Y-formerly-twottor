@@ -1,9 +1,19 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from './App'
+import Profile from "./Profile"
+import Notifications from './Notifications';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+        <BrowserRouter>
+        {/* Routes */}
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/Notifications" element={<Notifications />} />
+        </Routes>
+      </BrowserRouter>
   </StrictMode>,
 )
