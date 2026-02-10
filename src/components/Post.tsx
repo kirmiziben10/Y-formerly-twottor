@@ -19,7 +19,7 @@ export default function Post({ tweet }: { tweet: Tweet }) {
       <div>
         <div className="flex flex-row justify-start mt-2.5 ml-2">
           {user?.name} <span className="opacity-50">{user?.handle}</span>{" "}
-          <div className="justify-self-end">
+          <div className="justify-self-end ml-auto mr-4">
             <Ellipsis />
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function Post({ tweet }: { tweet: Tweet }) {
           {tweet.content}
         </div>
         <div className="flex flex-row text-sm items-center justify-start h-10">
-          <div className="group flex flex-row gap-1.5 hover:text-pink-500 cursor-pointer items-center justify-end p-2 m-1">
+          <div className="group flex flex-row gap-1.5 hover:text-pink-500 cursor-pointer items-center justify-end p-2 ml-0 m-1">
             <div className="p-1.5 rounded-full group-hover:bg-pink-500/10">
               <Heart size={18} />
             </div>
