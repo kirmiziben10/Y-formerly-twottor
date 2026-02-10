@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/Notifications" element={<Notifications />} />
+          <Route path="/notifications" element={<Notifications />} />
         </Routes>
       </BrowserRouter>
   </StrictMode>,

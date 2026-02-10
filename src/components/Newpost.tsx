@@ -17,7 +17,7 @@ export default function Newpost() {
             className="resize-none h-full text-black dark:text-white w-full text-xl min-h-16"
           ></input>
           <div className="flex flex-row justify-between items-center">
-              <div className="flex flex-row h-12 items-center"><Image className="cursor-pointer hover:opacity-50"/><MapPin className="cursor-pointer hover:opacity-50"/></div>
+              <div className="flex flex-row h-12 gap-2 items-center"><Image className="cursor-pointer hover:opacity-50" size={18}/><MapPin className="cursor-pointer hover:opacity-50" size={18}/></div>
               <div><button className="cursor-pointer bg-zinc-700 text-white rounded-full pl-4.5 pr-4.5 p-1.75 mr-3.5" onClick={()=>console.log("Posted")}>Post</button></div>
           </div>
         </div>
